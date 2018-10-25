@@ -6,13 +6,34 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class my_simpleStackTest extends Item {
+    private String no,nom2;
+    private  int size;
+
+    private Item item=new Item("traore");
+    private Item item2=new Item("traore");
+    private SimpleStack st=new my_simpleStack(item);
+
+
 
     @Before
     public void setUp() throws Exception {
+        no="traore";
+        nom2="Moussa";
+        size=1;
+        item2.setNom("Moussa");
+
     }
+
+my_simpleStackTest(){
+    super("traore");
+}
+
+
+
 
     @Test
     public void isEmpty() {
+    assertTrue(true);
     }
 
     @Test
