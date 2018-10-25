@@ -2,11 +2,14 @@ package deqo.mtra;
 
 import java.util.EmptyStackException;
 
-public class SimpleStack {
+public interface SimpleStack {
+
     /**
      * Tests if this stack is empty
      */
     public boolean isEmpty();
+
+
     /**
      * Returns the number of items in this stack.
      */
