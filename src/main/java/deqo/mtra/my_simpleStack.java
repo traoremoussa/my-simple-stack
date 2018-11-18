@@ -7,10 +7,11 @@ import java.util.List;
 public class my_simpleStack implements SimpleStack   {
 
 
-    public List<Item> stack=new ArrayList<>();
+    private List<Item> stack=new ArrayList<>();
 
     my_simpleStack(Item item ){
         stack.add(item);
+
     }
 
     /**

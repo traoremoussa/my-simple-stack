@@ -1,9 +1,8 @@
 package deqo.mtra;
 
-import org.junit.After;
+
 import org.junit.Before;
 import org.junit.Test;
-import org.junit.Assert;
 import static org.junit.Assert.*;
 
 public class ItemTest {
@@ -42,7 +41,5 @@ public class ItemTest {
         return item2;
     }
 
-    public void setItem(Item item) {
-        this.item = item;
-    }
+
 }

@@ -5,7 +5,7 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-public class my_simpleStackTest extends Item {
+public class my_simpleStackTest  {
     private String no,nom2;
     private  int size;
 
@@ -24,9 +24,7 @@ public class my_simpleStackTest extends Item {
 
     }
 
-my_simpleStackTest(){
-    super("traore");
-}
+
 
 
 
