@@ -6,12 +6,12 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class ItemTest {
-   private String no,nom2;
+   private String no,nom2; // peut etre local
    private  int size;
 
     private Item item=new Item("traore");
     private Item item2=new Item("traore");
-    private SimpleStack st=new my_simpleStack(item);
+
 
 
     @Before
@@ -24,22 +24,17 @@ public class ItemTest {
     }
     @Test
     public void testGetNom(){
+
         assertEquals("ne renvoi-pas"+no+"different de"+item.getNom(),no,item.getNom());
     }
-    @Test
-    public void testGetsize(){
-        assertEquals("ne renvoi-pas",size,st.getSize());
-    }
+
 
 
     @Test
     public void testSetNom(){
-        assertEquals("ne renvoi-pas"+nom2+"different de"+item.getNom(),nom2,getItem().getNom());
+        assertEquals("ne renvoi-pas"+nom2+"different de"+item.getNom(),nom2,item2.getNom());
     }
 
-    public Item getItem() {
-        return item2;
-    }
 
 
 }

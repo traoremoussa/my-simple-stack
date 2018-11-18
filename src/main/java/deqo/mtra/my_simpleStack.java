@@ -3,16 +3,13 @@ package deqo.mtra;
 import java.util.ArrayList;
 import java.util.EmptyStackException;
 import java.util.List;
+import java.util.Stack;
 
 public class my_simpleStack implements SimpleStack   {
 
 
-    private List<Item> stack=new ArrayList<>();
+    private Stack<Object> stack=new Stack<>();
 
-    my_simpleStack(Item item ){
-        stack.add(item);
-
-    }
 
     /**
      * Tests if this stack is empty
@@ -41,7 +38,7 @@ public class my_simpleStack implements SimpleStack   {
      * Looks at the object at the top of this stack without removing it from the stack.
      */
     public Item peek() throws EmptyStackException{
-        return this.stack.get(this.getSize()-1);
+        return  (Item) stack.peek();
 
     }
     /**
@@ -49,7 +46,7 @@ public class my_simpleStack implements SimpleStack   {
      * @throws EmptyStackException if this stack is empty.
      */
     public Item pop() throws EmptyStackException{
-        return this.stack.remove(this.getSize()-1);
+        return (Item) stack.pop();
 
     }
 
